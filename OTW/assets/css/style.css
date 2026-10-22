@@ -1,0 +1,82 @@
+/* =====================================================
+   Webshop – Stylesheet
+
+   1. Variablen
+   2. Grundlagen
+   3. Layout (Container, Kopf, Fuss)
+   4. Komponenten (Buttons, Formulare, Karten …)
+   5. Seiten
+   6. Responsive
+   ===================================================== */
+
+
+/* ---------- 1. Variablen ---------- */
+:root {
+    --farbe-primaer: #2563eb;
+    --farbe-text: #1f2937;
+    --farbe-text-hell: #6b7280;
+    --farbe-hintergrund: #f9fafb;
+    --farbe-flaeche: #ffffff;
+    --farbe-rand: #e5e7eb;
+    --radius: 8px;
+    --breite: 1100px;
+}
+
+
+/* ---------- 2. Grundlagen ---------- */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--farbe-text);
+    background: var(--farbe-hintergrund);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a { color: var(--farbe-primaer); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+
+/* ---------- 3. Layout ---------- */
+.container {
+    width: 100%;
+    max-width: var(--breite);
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+main { flex: 1; padding-block: 2rem; }
+
+.kopf { background: var(--farbe-flaeche); border-bottom: 1px solid var(--farbe-rand); }
+.kopf-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; }
+.logo { font-weight: 700; font-size: 1.25rem; color: var(--farbe-text); }
+
+.navigation { display: flex; gap: 1.25rem; }
+.navigation a { color: var(--farbe-text); }
+.navigation a.aktiv { color: var(--farbe-primaer); font-weight: 600; }
+
+.fuss { background: var(--farbe-flaeche); border-top: 1px solid var(--farbe-rand); color: var(--farbe-text-hell); }
+.fuss-inner { display: flex; align-items: center; justify-content: space-between; }
+.fuss nav { display: flex; gap: 1rem; }
+
+
+/* ---------- 4. Komponenten ---------- */
+/* TODO: .btn, Formulare, Produktkarten, Tabellen, Meldungen */
+
+
+/* ---------- 5. Seiten ---------- */
+/* TODO: Startseite, Produktdetail, Warenkorb, Kasse */
+
+
+/* ---------- 6. Responsive ---------- */
+@media (max-width: 768px) {
+    .kopf-inner { flex-direction: column; padding-block: .75rem; gap: .5rem; }
+    .navigation { flex-wrap: wrap; justify-content: center; }
+    .fuss-inner { flex-direction: column; padding-block: 1rem; }
+}
