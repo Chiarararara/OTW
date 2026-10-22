@@ -27,7 +27,7 @@ $seiten = [
     'kontakt',
     'impressum',
 ];
-
+TESSSSSSSSSSSSSTTTTTtttttt
 $seite = $_GET['seite'] ?? 'startseite';
 
 if (!in_array($seite, $seiten, true)) {
