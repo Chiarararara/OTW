@@ -1,0 +1,9 @@
+# Zeilenenden automatisch vereinheitlichen (Windows/Mac/Linux im Team)
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary

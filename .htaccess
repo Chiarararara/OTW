@@ -1,0 +1,5 @@
+# Startseite
+DirectoryIndex index.php
+
+# Interne Ordner sperren – nur index.php und assets/ sind öffentlich
+RedirectMatch 403 ^.*/(app|pages|templates|database|docs)/
